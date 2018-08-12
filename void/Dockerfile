@@ -6,6 +6,8 @@ RUN xbps-install -y -S -R http://repo.voidlinux.eu/current
 RUN xbps-install -y base-system
 RUN xbps-install -y grub-x86_64-efi
 RUN xbps-install -y lvm2
+RUN xbps-install -y btrfs-progs
+RUN xbps-install -y cryptsetup
 
 ADD helpers/darch-extract /darch-extract
 ADD helpers/darch-prepare /darch-prepare
